@@ -2,7 +2,7 @@
 
 [![npm package][npm-img]][npm-url] [![Build Status][build-img]][build-url] [![Downloads][downloads-img]][downloads-url] [![Issues][issues-img]][issues-url] [![Code Coverage][codecov-img]][codecov-url] [![Commitizen Friendly][commitizen-img]][commitizen-url] [![Semantic Release][semantic-release-img]][semantic-release-url]
 
-> My awesome module, use [typescript-npm-package-template](./START_GUIDE.md) as project boilerplate
+> My awesome module, use [typescript-npm-package-template](https://github.com/kainstar/typescript-npm-package-template) as project boilerplate
 
 ## Install
 
@@ -18,26 +18,6 @@ import { myPackage } from 'my-package-name';
 myPackage('hello');
 //=> 'hello from my package'
 ```
-
-## API
-
-### myPackage(input, options?)
-
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string` Default: `rainbows`
-
-Lorem ipsum.
 
 [build-img]: https://github.com/kainstar/typescript-npm-package-template/actions/workflows/release.yml/badge.svg
 [build-url]: https://github.com/kainstar/typescript-npm-package-template/actions/workflows/release.yml

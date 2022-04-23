@@ -12,6 +12,7 @@ keep all features from source repo.
 
 - Newer dependencies version
 - ESLint version and rules
+- [commitlint](https://github.com/conventional-changelog/commitlint)
 - Configuration File Location
 - Windows and linux compatible
 - Private customization
