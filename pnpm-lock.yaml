@@ -1,17 +1,19 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@commitlint/cli': ^16.2.3
+  '@commitlint/config-conventional': ^16.2.1
   '@types/jest': ^27.4.1
   '@types/node': ^16.11.27
   '@typescript-eslint/eslint-plugin': ^5.19.0
   '@typescript-eslint/parser': ^5.19.0
   commitizen: ^4.2.4
-  commitlint: ^16.2.3
   cz-conventional-changelog: ^3.3.0
   eslint: ^8.13.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.0.0
   husky: ^7.0.4
+  is-ci: ^3.0.1
   jest: ^27.5.1
   lint-staged: ^12.3.8
   prettier: ^2.6.2
@@ -22,17 +24,19 @@ specifiers:
   typescript: ^4.6.3
 
 devDependencies:
+  '@commitlint/cli': 16.2.3
+  '@commitlint/config-conventional': 16.2.1
   '@types/jest': 27.4.1
   '@types/node': 16.11.27
   '@typescript-eslint/eslint-plugin': 5.19.0_f34adc8488d2e4f014fe61432d70cbf2
   '@typescript-eslint/parser': 5.19.0_eslint@8.13.0+typescript@4.6.3
   commitizen: 4.2.4
-  commitlint: 16.2.3
   cz-conventional-changelog: 3.3.0
   eslint: 8.13.0
   eslint-config-prettier: 8.5.0_eslint@8.13.0
   eslint-plugin-prettier: 4.0.0_1815ac95b7fb26c13c7d48a8eef62d0f
   husky: 7.0.4
+  is-ci: 3.0.1
   jest: 27.5.1_ts-node@10.7.0
   lint-staged: 12.3.8
   prettier: 2.6.2
@@ -390,6 +394,13 @@ packages:
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
+    dev: true
+
+  /@commitlint/config-conventional/16.2.1:
+    resolution: {integrity: sha512-cP9gArx7gnaj4IqmtCIcHdRjTYdRUi6lmGE+lOzGGjGe45qGOS8nyQQNvkNy2Ey2VqoSWuXXkD8zCUh6EHf1Ww==}
+    engines: {node: '>=v12'}
+    dependencies:
+      conventional-changelog-conventionalcommits: 4.6.3
     dev: true
 
   /@commitlint/config-validator/16.2.1:
@@ -1815,18 +1826,6 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /commitlint/16.2.3:
-    resolution: {integrity: sha512-GjeGQZNNfFrWteskgrz9qaIvx7T+F7bz/ivkoVjj+LRTPqf5rfbrNtslQpKlcmZ610Ri1ONjN/uu935nx0/LcA==}
-    engines: {node: '>=v12'}
-    hasBin: true
-    dependencies:
-      '@commitlint/cli': 16.2.3
-      '@commitlint/types': 16.2.1
-    transitivePeerDependencies:
-      - '@swc/core'
-      - '@swc/wasm'
-    dev: true
-
   /compare-func/2.0.0:
     resolution: {integrity: sha512-zHig5N+tPWARooBnb0Zx1MFcdfpyJrfTJ3Y5L+IFvUm8rM74hHz66z0gw0x4tijh5CorKkKUCnW82R2vmpeCRA==}
     dependencies:
@@ -1843,6 +1842,15 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       compare-func: 2.0.0
+      q: 1.5.1
+    dev: true
+
+  /conventional-changelog-conventionalcommits/4.6.3:
+    resolution: {integrity: sha512-LTTQV4fwOM4oLPad317V/QNQ1FY4Hju5qeBIM1uTHbrnCE+Eg4CdRZ3gO2pUeR+tzWdp80M2j3qFFEDWVqOV4g==}
+    engines: {node: '>=10'}
+    dependencies:
+      compare-func: 2.0.0
+      lodash: 4.17.21
       q: 1.5.1
     dev: true
 
@@ -2938,6 +2946,13 @@ packages:
 
   /is-arrayish/0.2.1:
     resolution: {integrity: sha1-d8mYQFJ6qOyxqLppe4BkWnqSap0=}
+    dev: true
+
+  /is-ci/3.0.1:
+    resolution: {integrity: sha512-ZYvCgrefwqoQ6yTyYUbQu64HsITZ3NfKX1lzaEYdkTDcfKzzCI/wthRRYKkdjHKFVgNiXKAKm65Zo1pk2as/QQ==}
+    hasBin: true
+    dependencies:
+      ci-info: 3.3.0
     dev: true
 
   /is-core-module/2.8.1:
