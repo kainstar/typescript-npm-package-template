@@ -9,7 +9,6 @@
   "scripts": {
     "build": "tsc",
     "clean": "rimraf lib",
-    "cm": "cz",
     "lint": "eslint src",
     "prepare": "husky install",
     "semantic-release": "semantic-release",
