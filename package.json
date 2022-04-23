@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "cm": "cz",
     "clean": "rimraf lib",
     "lint": "eslint src",
     "prepare": "is-ci || husky install",
@@ -73,5 +74,8 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

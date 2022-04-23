@@ -6,11 +6,12 @@ Fork from [typescript-npm-package-template](https://github.com/ryansonshine/type
 
 ## Features
 
-keep all features from source repo.
+keep most features in source repo.
 
 ## Changes
 
 - Newer dependencies version
+- remove prepare-commit-msg hooks
 - ESLint version and rules
 - [commitlint](https://github.com/conventional-changelog/commitlint)
 - Configuration File Location
@@ -31,7 +32,7 @@ degit kainstar/typescript-npm-package-template my-new-project
 
 ### Initialize your repository
 
-Replace `AUTHOR_NAME`, `GITHUB_USER`, and `REPO_NAME` in the script below with your own details to personalize your new package:
+Replace `REPO_NAME` in the script below with your own details to personalize your new package:
 
 Linux or MacOS:
 
