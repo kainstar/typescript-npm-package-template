@@ -11,9 +11,8 @@ keep most features in source repo.
 ## Changes
 
 - Newer dependencies version
-- remove prepare-commit-msg hooks
 - ESLint version and rules
-- [commitlint](https://github.com/conventional-changelog/commitlint)
+- remove prepare-commit-msg hooks, use [commitlint](https://github.com/conventional-changelog/commitlint) instead
 - Configuration File Location
 - Windows and linux compatible
 - Private customization
@@ -39,7 +38,7 @@ Linux or MacOS:
 ```bash
 REPO_NAME="repo-name"
 
-sed -i "s/typescript-npm-package-template\|my-package-name/$REPO_NAME/g" package.json README.md
+sed -i "s/@kainstar\/typescript-npm-package-template\|my-package-name/$REPO_NAME/g" package.json README.md
 ```
 
 Windows:
@@ -48,7 +47,7 @@ Windows:
 $REPO_NAME = "repo-name"
 
 foreach ($File in @("package.json", "README.md")) {
-  (Get-Content $File) | %{$_ -replace "typescript-npm-package-template|my-package-name", $REPO_NAME} | Set-Content $File
+  (Get-Content $File) | %{$_ -replace "@kainstar/typescript-npm-package-template|my-package-name", $REPO_NAME} | Set-Content $File
 }
 ```
 
