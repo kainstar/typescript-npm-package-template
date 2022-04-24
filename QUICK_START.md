@@ -36,18 +36,20 @@ Replace `REPO_NAME` in the script below with your own details to personalize you
 Linux or MacOS:
 
 ```bash
+NPM_PKG_NAME="pkg-name"
 REPO_NAME="repo-name"
 
-sed -i "s/@kainstar\/typescript-npm-package-template\|my-package-name/$REPO_NAME/g" package.json README.md
+sed -i "s/@kainstar\/typescript-npm-package-template|my-package-name/$NPM_PKG_NAME/g; s/typescript-npm-package-template/$REPO_NAME/g" package.json README.md
 ```
 
 Windows:
 
 ```powershell
-$REPO_NAME = "repo-name"
+$NPM_PKG_NAME="pkg-name"
+$REPO_NAME="repo-name"
 
 foreach ($File in @("package.json", "README.md")) {
-  (Get-Content $File) | %{$_ -replace "@kainstar/typescript-npm-package-template|my-package-name", $REPO_NAME} | Set-Content $File
+  (Get-Content $File) | %{$_ -replace "@kainstar/typescript-npm-package-template|my-package-name", $NPM_PKG_NAME} | %{$_ -replace "typescript-npm-package-template", $REPO_NAME} | Set-Content $File
 }
 ```
 
