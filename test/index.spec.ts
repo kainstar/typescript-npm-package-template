@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest';
 import { myPackage } from '../src';
 
 describe('index', () => {
