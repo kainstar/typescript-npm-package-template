@@ -8,7 +8,7 @@ describe('index', () => {
 
       const result = myPackage(message);
 
-      expect(result).toMatch(message);
+      expect(result).toMatch(`${message} from my package`);
     });
   });
 });
