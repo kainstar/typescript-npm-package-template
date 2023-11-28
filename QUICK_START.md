@@ -35,11 +35,14 @@ Replace `REPO_NAME` in the script below with your own details to personalize you
 
 Linux or MacOS:
 
+Since incompatible `sed` command in BSD and GNU, I use [`sd`](https://github.com/chmln/sd) to replace string in files, install it with `brew install sd` or `cargo install sd`.
+
 ```bash
 NPM_PKG_NAME="pkg-name"
-REPO_NAME="repo-name"
+sd "(@kainstar/typescript-npm-package-template|my-package-name)" "$NPM_PKG_NAME" package.json README.md
 
-sed -i "s/@kainstar\/typescript-npm-package-template|my-package-name/$NPM_PKG_NAME/g; s/typescript-npm-package-template/$REPO_NAME/g" package.json README.md
+REPO_NAME="repo-name"
+sd "(typescript-npm-package-template)" "$REPO_NAME" package.json README.md
 ```
 
 Windows:
