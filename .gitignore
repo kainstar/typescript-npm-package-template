@@ -79,6 +79,9 @@ dist
 .vscode-test
 .vscode/settings.json
 
+# WebStorm settings
+.idea
+
 # yarn v2
 .yarn/cache
 .yarn/unplugged
