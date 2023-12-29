@@ -2,7 +2,7 @@
 
 > Template to kickstart creating a Node.js module using TypeScript and VSCode
 
-Fork from [typescript-npm-package-template](https://github.com/ryansonshine/typescript-npm-package-template) and make some changes to make to easy use for myself.
+Fork from [typescript-npm-package-template](https://github.com/ryansonshine/typescript-npm-package-template) and make some changes to make to easy use for me.
 
 ## Features
 
@@ -14,7 +14,7 @@ keep most features in source repo.
 - ESLint version and rules
 - remove prepare-commit-msg hooks, use [commitlint](https://github.com/conventional-changelog/commitlint) instead
 - Configuration File Location
-- Windows and linux compatible
+- Windows and mac compatible
 - Private customization
 
 ## Getting started
@@ -23,10 +23,10 @@ keep most features in source repo.
 
 **Click the "Use this template" button.**
 
-Alternatively, use [tiged](https://github.com/tiged/tiged) downloading repo to your local computer.
+Alternatively, use [giget](https://github.com/unjs/giget) downloading repo to your local computer.
 
 ```
-degit kainstar/typescript-npm-package-template my-new-project
+npx giget@latest gh:kainstar/typescript-npm-package-template my-new-project --install
 ```
 
 ### Initialize your repository
@@ -56,14 +56,12 @@ foreach ($File in @("package.json", "README.md")) {
 }
 ```
 
-### Add NPM Token
+### Add Token Secrets to GitHub
 
-Add your npm token to your GitHub repository secrets as `NPM_TOKEN`.
+- Add your npm token to your GitHub repository secrets as `NPM_TOKEN`.
+
+- Add your github token to your GitHub repository secrets as `GH_TOKEN`.
 
 ### Add Codecov integration
 
 Enable the Codecov GitHub App [here](https://github.com/apps/codecov).
-
-**Remove everything from here and above**
-
----
