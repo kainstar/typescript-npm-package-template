@@ -1,4 +1,4 @@
-import { defineConfig, defaultExclude } from 'vitest/config';
+import { defaultExclude, defineConfig } from 'vitest/config';
 
 const coverageExclude = [...defaultExclude, 'commitlint.config.*', '.eslintrc.*'];
 

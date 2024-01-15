@@ -14,9 +14,7 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "build": "unbuild",
     "cm": "cz",
@@ -39,13 +37,7 @@
   "engines": {
     "node": ">=18.0"
   },
-  "keywords": [
-    "boilerplate",
-    "template",
-    "typescript",
-    "vscode",
-    "semantic-release"
-  ],
+  "keywords": ["boilerplate", "template", "typescript", "vscode", "semantic-release"],
   "bugs": {
     "url": "https://github.com/kainstar/typescript-npm-package-template/issues"
   },
@@ -53,6 +45,7 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
+    "@kainstar/eslint-config": "^1.0.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^11.1.0",
     "@semantic-release/git": "^10.0.1",
@@ -60,14 +53,10 @@
     "@semantic-release/npm": "^11.0.2",
     "@semantic-release/release-notes-generator": "^12.1.0",
     "@types/node": "^20.10.5",
-    "@typescript-eslint/eslint-plugin": "^6.16.0",
-    "@typescript-eslint/parser": "^6.16.0",
     "@vitest/coverage-v8": "^1.1.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.1.2",
     "husky": "^8.0.3",
     "is-ci": "^3.0.1",
     "lint-staged": "^15.2.0",
