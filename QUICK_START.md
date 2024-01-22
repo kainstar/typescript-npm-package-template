@@ -23,10 +23,13 @@ keep most features in source repo.
 
 **Click the "Use this template" button.**
 
-Alternatively, use [giget](https://github.com/unjs/giget) downloading repo to your local computer.
+Alternatively, use [tiged](https://github.com/tiged/tiged) downloading repo to your local computer.
 
-```
-npx giget@latest gh:kainstar/typescript-npm-package-template my-new-project --install
+```bash
+REPO_NAME="repo-name"
+pnpx tiged@latest github:kainstar/typescript-npm-package-template $REPO_NAME
+# optional install dependencies
+cd $REPO_NAME && pnpm install
 ```
 
 ### Initialize your repository
