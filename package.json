@@ -1,6 +1,6 @@
 {
   "name": "@kainstar/typescript-npm-package-template",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A template for creating npm packages using TypeScript and VSCode",
   "sideEffects": false,
   "type": "module",
@@ -14,7 +14,9 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "unbuild",
     "cm": "cz",
@@ -37,7 +39,13 @@
   "engines": {
     "node": ">=18.0"
   },
-  "keywords": ["boilerplate", "template", "typescript", "vscode", "semantic-release"],
+  "keywords": [
+    "boilerplate",
+    "template",
+    "typescript",
+    "vscode",
+    "semantic-release"
+  ],
   "bugs": {
     "url": "https://github.com/kainstar/typescript-npm-package-template/issues"
   },
