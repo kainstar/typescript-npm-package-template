@@ -5,11 +5,20 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug Current TS File",
+      "name": "Debug with TS-Node",
       "type": "node",
       "request": "launch",
       "runtimeArgs": ["--nolazy", "-r", "ts-node/register/transpile-only"],
       "args": ["${relativeFile}"],
+      "cwd": "${workspaceRoot}",
+      "skipFiles": ["<node_internals>/**", "node_modules/**"]
+    },
+    {
+      "name": "Debug with TSX",
+      "type": "node",
+      "request": "launch",
+      "program": "${file}",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/tsx",
       "cwd": "${workspaceRoot}",
       "skipFiles": ["<node_internals>/**", "node_modules/**"]
     },
