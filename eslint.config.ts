@@ -1,3 +1,11 @@
-import kainstar from '@kainstar/eslint-config';
+import { combine, javascript, typescript, prettier } from '@kainstar/eslint-config';
 
-export default kainstar();
+export default combine(
+  javascript(),
+  typescript({
+    overrides: {
+      'ts/ban-ts-comment': 'off',
+    },
+  }),
+  prettier(true),
+);

@@ -8,5 +8,8 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["test", "vitest.config.ts"]
+  "include": [
+    "test",
+    "vitest.config.ts"
+  ]
 }
